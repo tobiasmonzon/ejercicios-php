@@ -5,19 +5,10 @@
     $ValorA=$_POST['ValorA'];
     $ValorB=$_POST['ValorB'];
 
-    //suma
-    $Suma=$ValorA+$ValorB;
-    //resta
-    $Resta=$ValorA-$ValorB;
-    //Division
-    $Division=$ValorA/$ValorB;
-    //Multiplicacion
-    $Multiplicacion=$ValorA*$ValorB;
-    
-    echo "<br/>".$Suma; 
-    echo "<br/>".$Resta; 
-    echo "<br/>".$Division; 
-    echo "<br/>".$Multiplicacion; 
+    if($ValorA != $ValorB){
+      
+      echo "El valor de A es diferente al valor de B";
+    }
 
  }
  
@@ -34,7 +25,7 @@
     <title>Operadores aritméticos </title>
  </head>
  <body>
-    <form action="ejercicio8.php" method="post">
+    <form action="ejercicio9.php" method="post">
         Valor A:
         <input type="text" name="ValorA" id="">
         <br/>
