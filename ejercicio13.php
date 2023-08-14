@@ -2,7 +2,7 @@
 
 if($_POST){
 
-    $boton=$_POST('btnValor');
+    $boton=$_POST['btnValor'];
 
     switch($boton){
 
