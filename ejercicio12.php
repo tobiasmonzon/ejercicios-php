@@ -5,17 +5,15 @@
     $ValorA=$_POST['ValorA'];
     $ValorB=$_POST['ValorB'];
 
-    if($ValorA != $ValorB){
+        if($ValorA != $ValorB){
   
         echo "El valor de A es diferente al de B";
         
-    }else{
+         }else{
         echo "El valor de A es igual al de B";
-    }
+        }
 
-    
-
-    }
+     }
  
  
  ?>
