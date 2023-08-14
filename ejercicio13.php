@@ -2,7 +2,25 @@
 
 if($_POST){
 
-    
+    $boton=$_POST('btnValor');
+
+    switch($boton){
+
+        case 1:
+            echo"Presiono el botón 1";
+        break;
+
+        case 2;
+            echo"Presiono el botón 2";
+        break;
+
+        case 3;
+            echo"Presiono el botón 3";
+        break;
+        
+
+    }
+
 
 }
 ?>
@@ -19,9 +37,12 @@ if($_POST){
 <body>
     <form action="ejercicio13.php" method="post">
 
-    <input type="submit" value="1">
-    <input type="submit" value="2">
-    <input type="submit" value="3">
+    <input type="submit" name="btnValor" value="1">
+    <br/>
+    <input type="submit" name="btnValor" value="2">
+    <br/>
+    <input type="submit" name="btnValor" value="3">
+    <br/>
 
     </form>
 </body>
